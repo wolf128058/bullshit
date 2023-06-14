@@ -9,6 +9,7 @@ Fußgänger laufen bei rot
 Fußgängerüberweg mißachtet
 Gepiepte Schimpfwörter
 Handy am Steuer
+Kein Licht bei Dunkelheit
 Ladung verloren
 Lichthupe
 LKW-Spurwechsel ohne Blinken
@@ -17,7 +18,9 @@ Parkplatzrowdy
 Radfahrer ohne Licht
 Radfahrer radelt auf Zebrastreifen
 Radfahrer übersehen
+Rettungsgasse missbraucht
 Riskanter Spurwechsel
+Riskantes Abbiegen
 Riskantes Überholmanöver Autobahn
 Riskantes Überholmanöver Landstraße
 Riskantes Überholmanöver Stadt
@@ -29,8 +32,10 @@ Sperrflächenkönig
 Sprachbefehl "Ok Garmin o.ä."
 Standstreifenmißbrauch
 Trunkenheitsfahrt
+Überholverbot missachtet
 übertrieben langes Hupen
 Vorfahrt missachtet: Kreisverkehr
 Vorfahrt missachtet: Kreuzung
 Wildwechsel
+Zebrastreifen ignoriert
 `;
