@@ -72,3 +72,9 @@ table.win td.freecell {
     padding: 2rem 0;
     display: block;
 }
+
+@media only screen and (max-width: 768px) {
+    .joker {
+        padding: 2.5vh 0;
+    }
+}
