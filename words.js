@@ -32,4 +32,5 @@ Trunkenheitsfahrt
 übertrieben langes Hupen
 Vorfahrt missachtet: Kreisverkehr
 Vorfahrt missachtet: Kreuzung
+Wildwechsel
 `;
