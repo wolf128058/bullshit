@@ -40,7 +40,7 @@ table.win td {
 
 table.card td:hover,
 table.win td:hover {
-    background-color: #666;
+    background-color: #444;
 }
 
 table.card td.clicked,
