@@ -1,5 +1,5 @@
 function click() {
-    var gps = [
+    let gps = [
             [0, 6],
             [4, 4],
             [0, 1],
@@ -23,10 +23,9 @@ function click() {
         this.title = 'Click to unmark cell';
         this.className = 'clicked';
     }
-    for (var ol = 0;
-        (g = gps[ol]); ol++) {
-        var cnt = 0;
-        for (var i = 0, cell; i < 5 && (cell = cells[g[0] + (i * g[1])]); i++) {
+    for (let ol = 0; (g = gps[ol]); ol++) {
+        let cnt = 0;
+        for (let i = 0, cell; i < 5 && (cell = cells[g[0] + (i * g[1])]); i++) {
             id = clicks.indexOf(cell.className);
             if (id >= 0) {
                 cnt++;
@@ -36,16 +35,14 @@ function click() {
         if (cnt == 5) wins.push(g);
     }
     if (wins.length)
-        for (var ol = 0;
-            (g = wins[ol]); ol++)
-            for (var i = 0; i < 5; i++) cells[g[0] + (i * g[1])].className = 'win';
+        for (let ol = 0; (g = wins[ol]); ol++)
+            for (let i = 0; i < 5; i++) cells[g[0] + (i * g[1])].className = 'win';
 }
 
 function enable_clicks() {
-    var tbls = document.getElementsByTagName('table');
-    for (var t = 0, tbl;
-        (tbl = tbls[t]); t++) {
-        if (tbl.className = 'card') {
+    let tbls = document.getElementsByTagName('table');
+    for (let t = 0, tbl; tbl = tbls[t]; t++) {
+        if (tbl.className == 'card') {
             var tds = tbl.getElementsByTagName('td');
             for (var i = 0, td;
                 (td = tds[i]); i++) {
