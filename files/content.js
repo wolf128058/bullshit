@@ -23,7 +23,7 @@ function randomize(words) {
         randomizedWords.push(randomWord);
         tempWords.splice(randomIndex, 1);
 
-		if (tempWords.length==0) {
+        if (tempWords.length === 0) {
             tempWords = words.slice();
         }
     }
