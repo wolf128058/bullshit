@@ -11,7 +11,7 @@ Gepiepte Schimpfwörter
 Handy am Steuer
 Kein Licht bei Dunkelheit/Dämmerung
 Ladung verloren
-Lichthupe
+Lichthupe (Nötigung)
 LKW-Spurwechsel ohne Blinken
 Mittelspurschleicher
 Parkplatzrowdy
