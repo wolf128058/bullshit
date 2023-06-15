@@ -34,11 +34,20 @@ function click() {
         }
         if (cnt === 5) {
             wins.push(g)
-        };
+        }
+        ;
     }
-    if (wins.length)
-        for (let ol = 0; (g = wins[ol]); ol++)
-            for (let i = 0; i < 5; i++) cells[g[0] + (i * g[1])].className = 'win';
+    if (wins.length) {
+        for (let ol = 0; (g = wins[ol]); ol++) {
+            for (let i = 0; i < 5; i++) {
+                cells[g[0] + (i * g[1])].className = 'win';
+            }
+        }
+    }
+    if (wins.length > current_wins) {
+        new Audio('/files/bingo.mp3').play();
+    }
+    current_wins = wins.length;
 }
 
 function enable_clicks() {
@@ -46,8 +55,7 @@ function enable_clicks() {
     for (let t = 0, tbl; tbl = tbls[t]; t++) {
         if (tbl.className === 'card') {
             var tds = tbl.getElementsByTagName('td');
-            for (var i = 0, td;
-                (td = tds[i]); i++) {
+            for (var i = 0, td; (td = tds[i]); i++) {
                 td.pTable = tbl;
                 if (td.className !== 'freecell') {
                     td.title = 'Klicken um die Zelle zu markieren';
@@ -72,4 +80,5 @@ function loader(func) {
     }
 }
 
+current_wins = 0;
 loader(enable_clicks);
