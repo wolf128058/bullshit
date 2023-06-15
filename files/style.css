@@ -61,6 +61,7 @@ table.win td.clicked:hover {
 table.card td.win,
 table.win td.win {
     background-color: #95FE30;
+    color: #000;
 }
 
 table.card td.freecell,
