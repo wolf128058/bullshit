@@ -23,6 +23,7 @@ function click() {
         this.title = 'Klicken um Zellenmarkierung zu entfernen.';
         this.className = 'clicked';
     }
+
     for (let ol = 0; (g = gps[ol]); ol++) {
         let cnt = 0;
         for (let i = 0, cell; i < 5 && (cell = cells[g[0] + (i * g[1])]); i++) {

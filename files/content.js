@@ -7,9 +7,9 @@ function loadWords() {
 
     let randomizedWords = randomize(bullshits);
     let counter = 0;
-	while (counter<cells) {
-		document.getElementById('cell' + counter++).innerHTML = '<span class="word">' + randomizedWords.pop() + '</span>';
-	}
+    while (counter < cells) {
+        document.getElementById('cell' + counter++).innerHTML = '<span class="word">' + randomizedWords.pop() + '</span>';
+    }
 }
 
 function randomize(words) {
@@ -20,14 +20,13 @@ function randomize(words) {
         let wordCount = tempWords.length;
         let randomIndex = Math.floor(Math.random() * wordCount);
         let randomWord = tempWords[randomIndex];
-		randomizedWords.push(randomWord);
-		tempWords.splice(randomIndex,1);
+        randomizedWords.push(randomWord);
+        tempWords.splice(randomIndex, 1);
 
 		if (tempWords.length==0) {
-			tempWords = words.slice();
-		}
+            tempWords = words.slice();
+        }
+    }
 
-	}
-
-	return randomizedWords;
+    return randomizedWords;
 }
