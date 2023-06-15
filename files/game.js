@@ -17,10 +17,10 @@ function click() {
         cells = this.pTable.getElementsByTagName('td'),
         wins = [];
     if (clicks.indexOf(this.className) > 0) {
-        this.title = 'Click to mark cell';
+        this.title = 'Klicken um die Zelle zu markieren';
         this.className = '';
     } else {
-        this.title = 'Click to unmark cell';
+        this.title = 'Klicken um Zellenmarkierung zu entfernen.';
         this.className = 'clicked';
     }
     for (let ol = 0; (g = gps[ol]); ol++) {
@@ -48,7 +48,7 @@ function enable_clicks() {
                 (td = tds[i]); i++) {
                 td.pTable = tbl;
                 if (td.className != 'freecell') {
-                    td.title = 'Click to mark cell';
+                    td.title = 'Klicken um die Zelle zu markieren';
                     td.onclick = click;
                 }
             }
