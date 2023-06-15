@@ -17,8 +17,8 @@ table.win tr {
 table.card,
 table.win {
     display: flex;
-    height: 90vh;
-    margin: 5vh auto;
+    height: 80vh;
+    margin: 10vh auto;
     text-align: center;
     width: 80vw;
 }
