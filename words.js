@@ -9,7 +9,7 @@ Fußgänger laufen bei rot
 Fußgängerüberweg mißachtet
 Gepiepte Schimpfwörter
 Handy am Steuer
-Kein Licht bei Dunkelheit
+Kein Licht bei Dunkelheit/Dämmerung
 Ladung verloren
 Lichthupe
 LKW-Spurwechsel ohne Blinken
