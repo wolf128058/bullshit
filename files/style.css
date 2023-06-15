@@ -61,19 +61,15 @@ table.win td.win {
 
 table.card td.freecell,
 table.win td.freecell {
-    font-weight: bold;
+    align-items: center;
     background-color: #CCC;
     color: #000;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
 }
 
 .joker {
     font-size: 3vw;
-    padding: 4.5vh 0;
     display: block;
-}
-
-@media only screen and (max-width: 768px) {
-    .joker {
-        padding: 2.5vh 0;
-    }
 }
