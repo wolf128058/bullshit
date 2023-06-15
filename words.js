@@ -1,15 +1,15 @@
 const words = `
 Abstandsvergehen
 Brakecheck
-Fahrer/Beifahrer steigt aus
+Fahrer/ Beifahrer steigt aus
 Fahrerflucht
 Fahrzeugteile verloren
-Fußgänger auf Autobahn/Schnellstraße
+Fußgänger auf Autobahn/ Schnellstraße
 Fußgänger laufen bei rot
 Fußgängerüberweg mißachtet
 Gepiepte Schimpfwörter
 Handy am Steuer
-Kein Licht bei Dunkelheit/Dämmerung
+Kein Licht bei Dunkelheit/ Dämmerung
 Ladung verloren
 Lichthupe (Nötigung)
 LKW-Spurwechsel ohne Blinken
