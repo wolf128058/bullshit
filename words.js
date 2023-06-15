@@ -31,6 +31,7 @@ Sekundenschlaf
 Sperrflächenkönig
 Sprachbefehl "Ok Garmin o.ä."
 Standstreifenmißbrauch
+Stinkefinger
 Trunkenheitsfahrt
 Überholverbot missachtet
 übertrieben langes Hupen
