@@ -29,10 +29,12 @@ function click() {
             id = clicks.indexOf(cell.className);
             if (id >= 0) {
                 cnt++;
-                if (id == 1) cell.className = 'clicked';
+                if (id === 1) cell.className = 'clicked';
             }
         }
-        if (cnt == 5) wins.push(g);
+        if (cnt === 5) {
+            wins.push(g)
+        };
     }
     if (wins.length)
         for (let ol = 0; (g = wins[ol]); ol++)
@@ -42,12 +44,12 @@ function click() {
 function enable_clicks() {
     let tbls = document.getElementsByTagName('table');
     for (let t = 0, tbl; tbl = tbls[t]; t++) {
-        if (tbl.className == 'card') {
+        if (tbl.className === 'card') {
             var tds = tbl.getElementsByTagName('td');
             for (var i = 0, td;
                 (td = tds[i]); i++) {
                 td.pTable = tbl;
-                if (td.className != 'freecell') {
+                if (td.className !== 'freecell') {
                     td.title = 'Klicken um die Zelle zu markieren';
                     td.onclick = click;
                 }
