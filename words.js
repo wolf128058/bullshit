@@ -29,7 +29,7 @@ Rote Ampel überfahren
 Rücksichtsloser Motoradfahrer
 Sekundenschlaf
 Sperrflächenkönig
-Sprachbefehl "Ok Garmin o.ä."
+Sprachbefehl "Ok Garmin" o.ä.
 Standstreifenmißbrauch
 Stinkefinger
 Trunkenheitsfahrt
