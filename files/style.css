@@ -30,7 +30,6 @@ table.win {
 table.card td,
 table.win td {
     align-items: center;
-    display: block;
     display: flex;
     font-size: 1.75vw;
     font-weight: bold;
