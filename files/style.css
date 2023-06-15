@@ -29,13 +29,17 @@ table.win {
 
 table.card td,
 table.win td {
+    align-items: center;
     display: block;
-    width: 20%;
+    display: flex;
     font-size: 1.75vw;
+    font-weight: bold;
     hyphens: auto;
+    justify-content: center;
     overflow: hidden;
     padding: 1rem;
     text-align: center;
+    width: 20%;
 }
 
 table.card td:hover,
@@ -61,12 +65,9 @@ table.win td.win {
 
 table.card td.freecell,
 table.win td.freecell {
-    align-items: center;
     background-color: #CCC;
     color: #000;
-    display: flex;
     font-weight: bold;
-    justify-content: center;
 }
 
 .joker {
