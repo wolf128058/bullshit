@@ -8,7 +8,7 @@ function loadWords() {
 	var randomizedWords = randomize(bullshits);
 	var counter=0;
 	while (counter<cells) {
-		document.getElementById('cell' + counter++).innerHTML = randomizedWords.pop();
+		document.getElementById('cell' + counter++).innerHTML = '<span class="word">' + randomizedWords.pop() + '</span>';
 	}
 }
 
