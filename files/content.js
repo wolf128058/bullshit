@@ -1,25 +1,25 @@
-var cells = 24;
+const cells = 24;
 
 function loadWords() {
-	var bullshits = words.split("\n")
+    let bullshits = words.split("\n")
 						 .filter(word => word.length > 0)
 						 .map(word => word.trim());
 
-	var randomizedWords = randomize(bullshits);
-	var counter=0;
+    let randomizedWords = randomize(bullshits);
+    let counter = 0;
 	while (counter<cells) {
 		document.getElementById('cell' + counter++).innerHTML = '<span class="word">' + randomizedWords.pop() + '</span>';
 	}
 }
 
 function randomize(words) {
-	var randomizedWords = [];
-	var tempWords = words.slice();
+    let randomizedWords = [];
+    let tempWords = words.slice();
 
-	for (var i=0; i<cells; i++) {
-		var wordCount = tempWords.length;
-		var randomIndex = Math.floor(Math.random() * wordCount);
-		var randomWord = tempWords[randomIndex];
+    for (let i = 0; i < cells; i++) {
+        let wordCount = tempWords.length;
+        let randomIndex = Math.floor(Math.random() * wordCount);
+        let randomWord = tempWords[randomIndex];
 		randomizedWords.push(randomWord);
 		tempWords.splice(randomIndex,1);
 
