@@ -36,7 +36,6 @@ function click() {
         if (cnt === 5) {
             wins.push(g)
         }
-        ;
     }
     if (wins.length) {
         for (let ol = 0; (g = wins[ol]); ol++) {
