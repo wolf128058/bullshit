@@ -75,3 +75,16 @@ table.win td.freecell {
     font-size: 3vw;
     display: block;
 }
+
+.statusinfo {
+    margin-top: calc(-10vh + 0.5rem);
+    margin-right: 10vw;
+    float: right;
+    font-size: 1.125vw;
+    display: none;
+}
+
+.statusinfo a {
+    text-decoration: none;
+    color: unset;
+}
