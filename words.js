@@ -10,11 +10,11 @@ Fußgängerüberweg mißachtet
 Geisterfahrer
 Gepiepte Schimpfwörter
 Geschwindigkeit überschritten
+Halsbrecherische Fußgänger
+Halsbrecherische Radfahrer
 Handy am Steuer
 Kein Licht bei Dunkelheit/ Dämmerung
 Ladung verloren
-Lebensmüde Fußgänger
-Lebensmüde Radfahrer
 Lichthupe (Nötigung)
 LKW-Spurwechsel ohne Blinken
 Mittelspurschleicher
