@@ -1,47 +1,47 @@
 const words = `
-Abstandsvergehen
-Brakecheck
+Abstands&shy;vergehen
+Brake&shy;check
 Fahrer/ Beifahrer steigt aus
-Fahrerflucht
-Fahrzeugteile verloren
+Fahrer&shy;flucht
+Fahrzeug&shy;teile verloren
 Fußgänger auf Autobahn/ Schnellstraße
 Fußgänger laufen bei rot
-Fußgängerüberweg mißachtet
-Geisterfahrer
-Gepiepte Schimpfwörter
+Fußgänger&shy;überweg mißachtet
+Geister&shy;fahrer
+Gepiepte Schimpf&shy;wörter
 Geschwindigkeit überschritten
-Halsbrecherische Fußgänger
-Halsbrecherische Radfahrer
+Hals&shy;brecherische Fußgänger
+Hals&shy;brecherische Radfahrer
 Handy am Steuer
 Kein Licht bei Dunkelheit/ Dämmerung
 Ladung verloren
 Lichthupe (Nötigung)
-LKW-Spurwechsel ohne Blinken
-Mittelspurschleicher
-Parkplatzrowdy
+LKW-&shy;Spurwechsel ohne Blinken
+Mittelspur&shy;schleicher
+Parkplatz&shy;rowdy
 Radfahrer ohne Licht
-Radfahrer radelt auf Zebrastreifen
+Radfahrer radelt auf Zebra&shy;streifen
 Radfahrer übersehen
 Rechts überholen (Autobahn)
-Rettungsgasse missbraucht
+Rettungs&shy;gasse missbraucht
 Riskanter Spurwechsel
 Riskantes Abbiegen
-Riskantes Überholmanöver Autobahn
-Riskantes Überholmanöver Landstraße
-Riskantes Überholmanöver Stadt
+Riskantes Überhol&shy;manöver Autobahn
+Riskantes Überhol&shy;manöver Landstraße
+Riskantes Überhol&shy;manöver Stadt
 Roadrage
 Rote Ampel überfahren
-Rücksichtsloser Motoradfahrer
-Sekundenschlaf
-Sperrflächenkönig
+Rücksichts&shy;loser Motorrad&shy;fahrer
+Sekunden&shy;schlaf
+Sperrflächen&shy;könig
 Sprachbefehl "Ok Garmin" o.ä.
-Standstreifenmißbrauch
-Stinkefinger
-Trunkenheitsfahrt
-Überholverbot missachtet
+Standstreifen&shy;mißbrauch
+Stinke&shy;finger
+Trunken&shy;heitsfahrt
+Überhol&shy;verbot missachtet
 Übertrieben langes Hupen
-Vorfahrt missachtet: Kreisverkehr
+Vorfahrt missachtet: Kreis&shy;verkehr
 Vorfahrt missachtet: Kreuzung
-Wildwechsel
-Zebrastreifen ignoriert
+Wild&shy;wechsel
+Zebra&shy;streifen ignoriert
 `;
