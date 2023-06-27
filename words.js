@@ -39,7 +39,7 @@ Standstreifenmißbrauch
 Stinkefinger
 Trunkenheitsfahrt
 Überholverbot missachtet
-übertrieben langes Hupen
+Übertrieben langes Hupen
 Vorfahrt missachtet: Kreisverkehr
 Vorfahrt missachtet: Kreuzung
 Wildwechsel
