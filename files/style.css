@@ -87,3 +87,12 @@ table.win td.freecell {
     font-size: 3vw;
     display: block;
 }
+
+#card0 td.clicked,
+#card0 td.win {
+	cursor: context-menu;
+}
+
+#card0 td:not(.win):not(.clicked) {
+	cursor: crosshair;
+}
