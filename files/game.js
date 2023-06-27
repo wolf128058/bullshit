@@ -17,10 +17,8 @@ function click() {
         cells = this.pTable.getElementsByTagName('td'),
         wins = [];
     if (clicks.indexOf(this.className) > 0) {
-        this.title = 'Klicken um die Zelle zu markieren';
         this.className = '';
     } else {
-        this.title = 'Klicken um Zellenmarkierung zu entfernen.';
         this.className = 'clicked';
     }
 
@@ -58,7 +56,6 @@ function enable_clicks() {
             for (var i = 0, td; (td = tds[i]); i++) {
                 td.pTable = tbl;
                 if (td.className !== 'freecell') {
-                    td.title = 'Klicken um die Zelle zu markieren';
                     td.onclick = click;
                 }
             }
