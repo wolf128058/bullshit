@@ -66,9 +66,7 @@ function enable_clicks() {
     }
 
     if(navigator.userAgent.includes('OBS')) {
-        document.getElementById('card0').style.margin = 0;
-        document.getElementById('card0').style.height = '100vh';
-        document.getElementById('card0').style.width = '100vw';
+        document.getElementsByTagName('body')[0].classList.add('obs');
     }
 }
 

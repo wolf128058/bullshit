@@ -23,6 +23,13 @@ table.win {
     width: 80vw;
 }
 
+.obs table.card,
+.obs table.win {
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+}
+
 table.win {
     border: 2px solid #95FE30;
 }
