@@ -49,6 +49,11 @@ table.win td {
     border: 1px solid #fff;
 }
 
+.obs table.card td,
+.obs table.win td {
+    font-size: 2.25vw;
+}
+
 table.card td:hover,
 table.win td:hover {
     background-color: #444;
