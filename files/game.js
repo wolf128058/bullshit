@@ -36,11 +36,14 @@ function click() {
         }
     }
     if (wins.length) {
+        document.getElementsByTagName('table')[0].classList.add('win');
         for (let ol = 0; (g = wins[ol]); ol++) {
             for (let i = 0; i < 5; i++) {
                 cells[g[0] + (i * g[1])].className = 'win';
             }
         }
+    } else {
+        document.getElementsByTagName('table')[0].classList.remove('win');
     }
     if (wins.length > current_wins) {
         new Audio('/files/bingo.mp3').play();
