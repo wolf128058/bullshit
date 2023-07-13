@@ -10,6 +10,17 @@ const simpleHash = str => {
     return new Uint32Array([hash])[0].toString(36);
 };
 
+function binArrToDec(binaryArray) {
+    if (binaryArray.length === 0) {
+        return null;
+    }
+
+    const binaryString = binaryArray.map((value) => value ? '1' : '0').join('');
+    const decimalNumber = parseInt(binaryString, 2);
+
+    return decimalNumber;
+}
+
 function loadWords() {
     let bullshits = words.split("\n")
         .filter(word => word.length > 0)
