@@ -36,7 +36,7 @@ function tdclick() {
         clicks = ['freecell', 'win', 'clicked'],
         cells = this.pTable.getElementsByTagName('td'),
         myhash = this.getAttribute('data-hash');
-        let myli = document.querySelectorAll("li[data-hash=\"" + myhash + "\"]")[0];
+    let myli = document.querySelectorAll("li[data-hash=\"" + myhash + "\"]")[0];
 
     if (clicks.indexOf(this.className) > 0) {
         this.className = '';
@@ -49,7 +49,6 @@ function tdclick() {
         gamedata['words'][myhash]['clicked'] = true;
         gamedata['stats']['clicked']++;
     }
-
 
     wordindex = new Array();
     for (let key in gamedata['words']) {
@@ -95,8 +94,8 @@ function enable_clicks() {
     let tbls = document.getElementsByTagName('table');
     for (let t = 0, tbl; tbl = tbls[t]; t++) {
         if (tbl.className === 'card') {
-            var tds = tbl.getElementsByTagName('td');
-            for (var i = 0, td; (td = tds[i]); i++) {
+            let tds = tbl.getElementsByTagName('td');
+            for (let i = 0, td; (td = tds[i]); i++) {
                 td.pTable = tbl;
                 if (td.className !== 'freecell') {
                     td.onclick = tdclick;

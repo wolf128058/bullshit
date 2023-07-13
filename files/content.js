@@ -30,7 +30,6 @@ function loadWords() {
     let sortedWords = [...randomizedWords].sort();
     let wordlist = document.getElementById("wordlist");
 
-
     for (let i = 0; i < sortedWords.length; i++) {
         let li = document.createElement("li");
         li.innerHTML = sortedWords[i];
@@ -38,7 +37,6 @@ function loadWords() {
         li.setAttribute('onclick', 'liclick(this)');
         wordlist.appendChild(li);
     }
-
 
     let counter = 0;
     while (counter < cells) {
