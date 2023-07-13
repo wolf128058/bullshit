@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
         console.log
         if (mypos == '1') {
             mycell = svgObject.getElementById('cell' + (i + 1));
-            mycell.setAttribute('style', 'fill:#00ff00');
+            mycell.setAttribute('style', 'fill:#008080');
         }
     }
     console.log(binary);
