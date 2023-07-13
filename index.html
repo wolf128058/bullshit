@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="de-DE">
-  <head>
+<head>
     <title>Bullshit Bingo</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="files/style.css">
     <script type="text/javascript" src="files/game.js"></script>
     <script type="text/javascript" src="words.js"></script>
     <script type="text/javascript" src="files/content.js"></script>
-  </head>
-  <body onload="loadWords()">
-    <table class="card" id="card0" cellspacing="0">
-      <tbody>
-        <tr>
-          <td id="cell0"></td>
-          <td id="cell1"></td>
-          <td id="cell2"></td>
-          <td id="cell3"></td>
-          <td id="cell4"></td>
-        </tr>
-        <tr>
-          <td id="cell5"></td>
-          <td id="cell6"></td>
-          <td id="cell7"></td>
-          <td id="cell8"></td>
-          <td id="cell9"></td>
-        </tr>
-        <tr>
-          <td id="cell10"></td>
-          <td id="cell11"></td>
-          <td class="freecell">
-            <span class="joker">JOKER</span>
-            <a class="joker" href="https://twitch.tv/michaelvonullrichstein/" target="_blank">
-                <img src="files/micha.svg" title="Idee: Michael von Ullrichstein" >
-            </a>
-          </td>
-          <td id="cell12"></td>
-          <td id="cell13"></td>
-        </tr>
-        <tr>
-          <td id="cell14"></td>
-          <td id="cell15"></td>
-          <td id="cell16"></td>
-          <td id="cell17"></td>
-          <td id="cell18"></td>
-        </tr>
-        <tr>
-          <td id="cell19"></td>
-          <td id="cell20"></td>
-          <td id="cell21"></td>
-          <td id="cell22"></td>
-          <td id="cell23"></td>
-        </tr>
-    </tbody></table>
-</body></html>
+</head>
+<body onload="loadWords()">
+    <div class="flexparent">
+        <div class="flexcol-80">
+            <table class="card" id="card0" cellspacing="0">
+                <tbody>
+                <tr>
+                    <td id="cell0"></td>
+                    <td id="cell1"></td>
+                    <td id="cell2"></td>
+                    <td id="cell3"></td>
+                    <td id="cell4"></td>
+                </tr>
+                <tr>
+                    <td id="cell5"></td>
+                    <td id="cell6"></td>
+                    <td id="cell7"></td>
+                    <td id="cell8"></td>
+                    <td id="cell9"></td>
+                </tr>
+                <tr>
+                    <td id="cell10"></td>
+                    <td id="cell11"></td>
+                    <td class="freecell">
+                        <span class="joker">JOKER</span>
+                        <a class="joker" href="https://twitch.tv/michaelvonullrichstein/" target="_blank">
+                            <img src="files/micha.svg" title="Idee: Michael von Ullrichstein">
+                        </a>
+                    </td>
+                    <td id="cell12"></td>
+                    <td id="cell13"></td>
+                </tr>
+                <tr>
+                    <td id="cell14"></td>
+                    <td id="cell15"></td>
+                    <td id="cell16"></td>
+                    <td id="cell17"></td>
+                    <td id="cell18"></td>
+                </tr>
+                <tr>
+                    <td id="cell19"></td>
+                    <td id="cell20"></td>
+                    <td id="cell21"></td>
+                    <td id="cell22"></td>
+                    <td id="cell23"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="flexcol-20 wordlist">
+            <h2>Wörter</h2>
+            <ul id="wordlist"></ul>
+        </div>
+    </div>
+</body>
+</html>

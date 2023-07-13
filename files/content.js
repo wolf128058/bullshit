@@ -1,14 +1,40 @@
 const cells = 24;
 
+const simpleHash = str => {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+        const char = str.charCodeAt(i);
+        hash = (hash << 5) - hash + char;
+        hash &= hash; // Convert to 32bit integer
+    }
+    return new Uint32Array([hash])[0].toString(36);
+};
+
 function loadWords() {
     let bullshits = words.split("\n")
-						 .filter(word => word.length > 0)
-						 .map(word => word.trim());
+        .filter(word => word.length > 0)
+        .map(word => word.trim());
 
     let randomizedWords = randomize(bullshits);
+    let sortedWords = [...randomizedWords].sort();
+    let wordlist = document.getElementById("wordlist");
+
+
+    for (let i = 0; i < sortedWords.length; i++) {
+        let li = document.createElement("li");
+        li.innerHTML = sortedWords[i];
+        li.setAttribute('data-hash', simpleHash(sortedWords[i]));
+        li.setAttribute('onclick', 'liclick(this)');
+        wordlist.appendChild(li);
+    }
+
+
     let counter = 0;
     while (counter < cells) {
-        document.getElementById('cell' + counter++).innerHTML = '<span class="word">' + randomizedWords.pop() + '</span>';
+        currentword = randomizedWords.pop();
+        document.getElementById('cell' + counter).innerHTML = '<span class="word" data-hash="' + simpleHash(currentword) + '">' + currentword + '</span>';
+        document.getElementById('cell' + counter).setAttribute('data-hash', simpleHash(currentword));
+        counter++;
     }
 }
 

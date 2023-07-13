@@ -1,4 +1,10 @@
-function click() {
+function liclick(element) {
+    myhash = element.getAttribute('data-hash');
+    let mytd = document.querySelectorAll("td[data-hash=\"" + myhash + "\"]")[0];
+    mytd.click();
+}
+
+function tdclick() {
     let gps = [
             [0, 6],
             [4, 4],
@@ -15,13 +21,18 @@ function click() {
         ],
         clicks = ['freecell', 'win', 'clicked'],
         cells = this.pTable.getElementsByTagName('td'),
-        wins = [];
+        myhash = this.getAttribute('data-hash');
+        let myli = document.querySelectorAll("li[data-hash=\"" + myhash + "\"]")[0];
+
     if (clicks.indexOf(this.className) > 0) {
         this.className = '';
+        myli.classList.remove('clicked');
     } else {
         this.className = 'clicked';
+        myli.classList.add('clicked');
     }
 
+    wins = [];
     for (let ol = 0; (g = gps[ol]); ol++) {
         let cnt = 0;
         for (let i = 0, cell; i < 5 && (cell = cells[g[0] + (i * g[1])]); i++) {
@@ -59,13 +70,13 @@ function enable_clicks() {
             for (var i = 0, td; (td = tds[i]); i++) {
                 td.pTable = tbl;
                 if (td.className !== 'freecell') {
-                    td.onclick = click;
+                    td.onclick = tdclick;
                 }
             }
         }
     }
 
-    if(navigator.userAgent.includes('OBS')) {
+    if (navigator.userAgent.includes('OBS')) {
         document.getElementsByTagName('body')[0].classList.add('obs');
     }
 }
