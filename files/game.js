@@ -1,4 +1,4 @@
-var gamedata = {'player': undefined, 'words': {}, 'myclicked': 0, 'stats': {'clicked': 0, 'wins': 0}};
+var gamedata = {'player': undefined, 'words': {}, 'clicked2dec': 0, 'stats': {'clicked': 0, 'wins': 0}};
 var lzgamedata = '';
 
 function liclick(element) {
@@ -36,6 +36,13 @@ function tdclick() {
         myli.classList.add('clicked');
         gamedata['stats']['clicked']++;
     }
+
+
+    wordindex = new Array();
+    for (let key in gamedata['words']) {
+        wordindex.push(gamedata['words'][key]['clicked']);
+    }
+    gamedata['clicked2dec'] = binArrToDec(wordindex);
 
     wins = [];
     for (let ol = 0; (g = gps[ol]); ol++) {

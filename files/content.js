@@ -57,6 +57,8 @@ function randomize(words) {
         let wordCount = tempWords.length;
         let randomIndex = Math.floor(Math.random() * wordCount);
         let randomWord = tempWords[randomIndex];
+        gamedata['clicked2dec'] = 0;
+
         randomizedWords.push(randomWord);
         tempWords.splice(randomIndex, 1);
 
