@@ -1,0 +1,18 @@
+.check svg {
+    width: 80vmin;
+    margin: 0 auto;
+    height: 80vmin;
+    stroke: white;
+}
+
+svg #joker {
+    fill: #303000;
+}
+
+svg path:nth-of-type(2n+1) {
+    fill: #606060;
+}
+
+svg path:nth-of-type(2n) {
+    fill: #202020;
+}
