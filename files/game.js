@@ -1,6 +1,17 @@
 var gamedata = {'player': undefined, 'words': {}, 'clicked2dec': 0, 'stats': {'clicked': 0, 'wins': 0}};
 var lzgamedata = '';
 
+function compressDecimal(integer) {
+    let digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    let compressedString = '';
+    while (integer > 0) {
+        let digit = integer % digits.length;
+        compressedString = digits[digit] + compressedString;
+        integer = Math.floor(integer / digits.length);
+    }
+    return compressedString;
+}
+
 function liclick(element) {
     myhash = element.getAttribute('data-hash');
     let mytd = document.querySelectorAll("td[data-hash=\"" + myhash + "\"]")[0];
@@ -77,6 +88,7 @@ function tdclick() {
         new Audio('/files/bingo.mp3').play();
     }
     current_wins = wins.length;
+    document.getElementById("code").innerHTML = compressDecimal(gamedata['clicked2dec']);
 }
 
 function enable_clicks() {
