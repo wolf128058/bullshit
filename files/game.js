@@ -30,10 +30,12 @@ function tdclick() {
     if (clicks.indexOf(this.className) > 0) {
         this.className = '';
         myli.classList.remove('clicked');
+        gamedata['words'][myhash]['clicked'] = false;
         gamedata['stats']['clicked']--;
     } else {
         this.className = 'clicked';
         myli.classList.add('clicked');
+        gamedata['words'][myhash]['clicked'] = true;
         gamedata['stats']['clicked']++;
     }
 

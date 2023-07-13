@@ -34,7 +34,7 @@ function loadWords() {
     for (let i = 0; i < sortedWords.length; i++) {
         let li = document.createElement("li");
         li.innerHTML = sortedWords[i];
-        li.setAttribute('data-hash', simpleHash(sortedWords[i]));
+        li.setAttribute('data-hash', simpleHash(sortedWords[i].replace('&shy;', "")));
         li.setAttribute('onclick', 'liclick(this)');
         wordlist.appendChild(li);
     }
@@ -43,8 +43,12 @@ function loadWords() {
     let counter = 0;
     while (counter < cells) {
         currentword = randomizedWords.pop();
-        document.getElementById('cell' + counter).innerHTML = '<span class="word" data-hash="' + simpleHash(currentword) + '">' + currentword + '</span>';
-        document.getElementById('cell' + counter).setAttribute('data-hash', simpleHash(currentword));
+        //console.log(currentword);
+        gamedata['words'][simpleHash(currentword.replace('&shy;', ""))] = {};
+        gamedata['words'][simpleHash(currentword.replace('&shy;', ""))]['word'] = currentword.replace('&shy;', "");
+        gamedata['words'][simpleHash(currentword.replace('&shy;', ""))]['clicked'] = false;
+        document.getElementById('cell' + counter).innerHTML = '<span class="word" data-hash="' + simpleHash(currentword.replace('&shy;', "")) + '">' + currentword + '</span>';
+        document.getElementById('cell' + counter).setAttribute('data-hash', simpleHash(currentword.replace('&shy;', "")));
         counter++;
     }
 }
