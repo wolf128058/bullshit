@@ -36,7 +36,7 @@ table.card td,
 table.win td {
     align-items: center;
     display: flex;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     font-weight: bold;
     hyphens: auto;
     justify-content: center;
@@ -148,7 +148,7 @@ table.win td.freecell {
 }
 
 .wordlist h2 {
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     text-align: center;
     padding: 0;
     margin: 10px 0;
