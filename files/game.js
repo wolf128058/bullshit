@@ -1,3 +1,6 @@
+var gamedata = {'player': undefined, 'words': {}, 'myclicked': 0, 'stats': {'clicked': 0, 'wins': 0}};
+var lzgamedata = '';
+
 function liclick(element) {
     myhash = element.getAttribute('data-hash');
     let mytd = document.querySelectorAll("td[data-hash=\"" + myhash + "\"]")[0];
