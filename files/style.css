@@ -159,6 +159,8 @@ div.wordlist {
     border: 1px solid #fff;
     border-collapse: collapse;
     background-color: #181818;
+    height: calc(80vh - 2px);
+    overflow: scroll;
 }
 
 .obs div.wordlist {
@@ -172,6 +174,7 @@ div.wordlist {
     display: block;
     width: 100%;
     margin: 7px 0;
+    cursor: pointer;
 }
 
 #wordlist li:hover {
