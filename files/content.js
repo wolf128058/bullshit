@@ -41,7 +41,6 @@ function loadWords() {
     let counter = 0;
     while (counter < cells) {
         currentword = randomizedWords.pop();
-        //console.log(currentword);
         gamedata['words'][simpleHash(currentword.replace('&shy;', ""))] = {};
         gamedata['words'][simpleHash(currentword.replace('&shy;', ""))]['word'] = currentword.replace('&shy;', "");
         gamedata['words'][simpleHash(currentword.replace('&shy;', ""))]['clicked'] = false;
