@@ -75,5 +75,9 @@ function randomize(words) {
     decWordlist = LZString.compressToEncodedURIComponent(JSON.stringify(decWordlist));
     gamedata['wordlist'] = decWordlist;
 
+    // decoWordlist = LZString.decompressFromEncodedURIComponent(decWordlist);
+    // decoWordlist = JSON.parse(decoWordlist);
+    // decoWordlist = decoWordlist.reverse();
+
     return randomizedWords;
 }
