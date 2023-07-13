@@ -30,9 +30,11 @@ function tdclick() {
     if (clicks.indexOf(this.className) > 0) {
         this.className = '';
         myli.classList.remove('clicked');
+        gamedata['stats']['clicked']--;
     } else {
         this.className = 'clicked';
         myli.classList.add('clicked');
+        gamedata['stats']['clicked']++;
     }
 
     wins = [];
@@ -59,6 +61,9 @@ function tdclick() {
     } else {
         document.getElementsByTagName('table')[0].classList.remove('win');
     }
+
+    gamedata['stats']['wins'] = wins.length;
+
     if (wins.length > current_wins) {
         new Audio('/files/bingo.mp3').play();
     }
