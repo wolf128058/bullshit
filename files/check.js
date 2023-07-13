@@ -42,12 +42,9 @@ window.addEventListener("load", function () {
 
     for (let i = 0; i < binary.length; i++) {
         mypos = binary.charAt(i);
-        console.log(i + ':' + mypos);
-        console.log
         if (mypos == '1') {
             mycell = svgObject.getElementById('cell' + (i + 1));
             mycell.setAttribute('style', 'fill:#008080');
         }
     }
-    console.log(binary);
 });
