@@ -56,11 +56,15 @@ function loadWords() {
 function randomize(words) {
     let randomizedWords = [];
     let tempWords = words.slice();
+    let allWords = words.slice().map(item => item.replace(/&shy;/g, ''));
+    let decWordlist = [];
 
     for (let i = 0; i < cells; i++) {
         let wordCount = tempWords.length;
         let randomIndex = Math.floor(Math.random() * wordCount);
         let randomWord = tempWords[randomIndex];
+
+        decWordlist.push(allWords.indexOf(randomWord.replace(/&shy;/g, '')));
         gamedata['clicked2dec'] = 0;
 
         randomizedWords.push(randomWord);
@@ -70,6 +74,8 @@ function randomize(words) {
             tempWords = words.slice();
         }
     }
+    decWordlist = LZString.compressToEncodedURIComponent(JSON.stringify(decWordlist));
+    gamedata['wordlist'] = decWordlist;
 
     return randomizedWords;
 }
