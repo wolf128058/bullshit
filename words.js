@@ -5,7 +5,7 @@ Fahrer/ Beifahrer steigt aus
 Fahrer&shy;flucht
 Fahrzeug&shy;teile verloren
 Fußgänger auf Autobahn/ Schnellstraße
-Fußgänger laufen bei rot
+Fußgänger laufen bei Rot
 Fußgänger&shy;überweg mißachtet
 Geister&shy;fahrer
 Gepiepte Schimpf&shy;wörter
