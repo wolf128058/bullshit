@@ -66,6 +66,11 @@ window.addEventListener("load", function () {
         }
         if (event.key !== undefined) {
             colorizeSvg(document.getElementById("checktext").value);
+            let url = new URL(window.location.href);
+            let params = new URLSearchParams(url.search);
+            params.set("check", document.getElementById("checktext").value);
+            url.search = params.toString();
+            window.history.replaceState({}, '', url.href);
         }
     });
 });
