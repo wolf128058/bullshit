@@ -22,7 +22,7 @@ Parkplatz&shy;rowdy
 Radfahrer ohne Licht
 Radfahrer radelt auf Zebra&shy;streifen
 Radfahrer übersehen
-Rechts überholen (Autobahn)
+Rechts überholen
 Rettungs&shy;gasse missbraucht
 Riskanter Spurwechsel
 Riskantes Abbiegen
