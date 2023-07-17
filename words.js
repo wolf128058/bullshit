@@ -1,5 +1,6 @@
 const words = `
 Abstands&shy;vergehen
+Blech&shy;schaden
 Brake&shy;check
 Fahrer/ Beifahrer steigt aus
 Fahrer&shy;flucht
