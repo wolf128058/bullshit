@@ -5,6 +5,7 @@ function decompressDecimal(compressedString) {
     let digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
     if (!compressedString) {
+        document.getElementById('checktext').setAttribute('style', 'color: #ff0000');
         throw new Error('Ungültiger komprimierter String');
     }
 
@@ -16,10 +17,12 @@ function decompressDecimal(compressedString) {
         let digit = digits.indexOf(char);
 
         if (digit === -1) {
+            document.getElementById('checktext').setAttribute('style', 'color: #ff0000');
             throw new Error('Ungültiges Zeichen im komprimierten String');
         }
         decompressedInteger = decompressedInteger * base + digit;
     }
+    document.getElementById('checktext').setAttribute('style', 'color: #000000');
     return decompressedInteger;
 }
 
@@ -44,6 +47,14 @@ function colorizeSvg(checkcode) {
     for (let i = 0; i < binary.length; i++) {
         mypos = binary.charAt(i);
         mycell = svgObject.getElementById('cell' + (i + 1));
+
+        if (mycell == null) {
+            document.getElementById('checktext').setAttribute('style', 'color: #ff0000');
+            throw new Error('Zellcode zu lang!');
+        } else {
+            document.getElementById('checktext').setAttribute('style', 'color: #000000');
+        }
+
         if (mypos == '1') {
             mycell.setAttribute('style', 'fill:#008080');
         } else {
