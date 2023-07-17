@@ -23,11 +23,12 @@ function decompressDecimal(compressedString) {
     return decompressedInteger;
 }
 
-let check = decompressDecimal(urlParams.get('check'));
-let binary = '';
-
-window.addEventListener("load", function () {
+function colorizeSvg(checkcode) {
+    let check = decompressDecimal(checkcode);
     let svgObject = document.getElementById('bingoboard');
+
+    let binary = '';
+    binary = String(binary);
 
     while (check > 0) {
         if (check & 1) {
@@ -37,14 +38,34 @@ window.addEventListener("load", function () {
         }
         check = check >> 1;
     }
-    binary = String(binary);
+
     while (binary.length < size) binary = "0" + binary;
 
     for (let i = 0; i < binary.length; i++) {
         mypos = binary.charAt(i);
+        mycell = svgObject.getElementById('cell' + (i + 1));
         if (mypos == '1') {
-            mycell = svgObject.getElementById('cell' + (i + 1));
             mycell.setAttribute('style', 'fill:#008080');
+        } else {
+            mycell.setAttribute('style', 'fill:unset');
         }
     }
+}
+
+window.addEventListener("load", function () {
+
+    let textbox = document.getElementById('checktext');
+    if (urlParams.get('check')) {
+        colorizeSvg(urlParams.get('check'));
+        textbox.setAttribute('value', urlParams.get('check'));
+    }
+
+    document.getElementById("checktext").addEventListener("keyup", (event) => {
+        if (event.isComposing || event.keyCode === 229) {
+            return;
+        }
+        if (event.key !== undefined) {
+            colorizeSvg(document.getElementById("checktext").value);
+        }
+    });
 });
