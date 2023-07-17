@@ -36,6 +36,7 @@ Sekunden&shy;schlaf
 Sperrflächen&shy;könig
 Sprachbefehl "Ok Garmin" o.ä.
 Standstreifen&shy;mißbrauch
+Stop-&shy;Schild überfahren
 Stinke&shy;finger
 Trunken&shy;heitsfahrt
 Überhol&shy;verbot missachtet
