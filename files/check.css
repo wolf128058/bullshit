@@ -5,6 +5,23 @@
     stroke: white;
 }
 
+form {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#checktext {
+	position: absolute;
+	max-width: 12vmin;
+	text-align: center;
+	font-size: 2.5vmin;
+}
+
 svg #joker {
     fill: #303000;
 }
