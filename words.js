@@ -26,9 +26,7 @@ Rechts überholen
 Rettungs&shy;gasse missbraucht
 Riskanter Spurwechsel
 Riskantes Abbiegen
-Riskantes Überhol&shy;manöver Autobahn
-Riskantes Überhol&shy;manöver Landstraße
-Riskantes Überhol&shy;manöver Stadt
+Riskantes Überhol&shy;manöver
 Roadrage
 Rote Ampel überfahren
 Rücksichts&shy;loser Motorrad&shy;fahrer
