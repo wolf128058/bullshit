@@ -39,8 +39,7 @@ Stinke&shy;finger
 Trunken&shy;heitsfahrt
 Überhol&shy;verbot missachtet
 Übertrieben langes Hupen
-Vorfahrt missachtet: Kreis&shy;verkehr
-Vorfahrt missachtet: Kreuzung
+Vorfahrt missachtet
 Wild&shy;wechsel
 Zebra&shy;streifen ignoriert
 `;
