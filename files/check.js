@@ -65,10 +65,9 @@ function colorizeSvg(checkcode) {
 
 window.addEventListener("load", function () {
 
-    let textbox = document.getElementById('checktext');
     if (urlParams.get('check')) {
         colorizeSvg(urlParams.get('check'));
-        textbox.setAttribute('value', urlParams.get('check'));
+        document.getElementById('checktext').setAttribute('value', urlParams.get('check'));
     }
 
     document.getElementById("checktext").addEventListener("keyup", (event) => {
