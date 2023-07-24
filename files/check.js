@@ -3,10 +3,16 @@ const size = 24;
 
 function decompressDecimal(compressedString) {
     let digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    let forbidden = ['12cpD', 'q2Ht', 'EddE', 'QoAY'];
 
     if (!compressedString) {
         document.getElementById('checktext').setAttribute('style', 'color: #ff0000');
         throw new Error('Ungültiger komprimierter String');
+    }
+
+    if (forbidden.includes(compressedString)) {
+        document.getElementById('checktext').setAttribute('style', 'color: #ff0000');
+        throw new Error('Verbotener String');
     }
 
     let base = digits.length;
