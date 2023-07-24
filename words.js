@@ -24,6 +24,7 @@ Radfahrer ohne Licht
 Radfahrer radelt auf Zebra&shy;streifen
 Radfahrer übersehen
 Rechts überholen
+Rettungs&shy;kräfte behindert
 Rettungs&shy;gasse missbraucht
 Riskanter Spurwechsel
 Riskantes Abbiegen
