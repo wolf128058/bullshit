@@ -1,8 +1,14 @@
-var gamedata = {'player': undefined, 'words': {}, 'clicked2dec': 0, 'stats': {'clicked': 0, 'wins': 0}};
+var gamedata = {
+    player: undefined,
+    words: {},
+    clicked2dec: 0,
+    stats: { clicked: 0, wins: 0 }
+};
 var lzgamedata = '';
 
 function compressDecimal(integer) {
-    let digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    let digits =
+        '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     let compressedString = '';
     while (integer > 0) {
         let digit = integer % digits.length;
@@ -14,7 +20,7 @@ function compressDecimal(integer) {
 
 function liclick(element) {
     myhash = element.getAttribute('data-hash');
-    let mytd = document.querySelectorAll("td[data-hash=\"" + myhash + "\"]")[0];
+    let mytd = document.querySelectorAll('td[data-hash="' + myhash + '"]')[0];
     mytd.click();
 }
 
@@ -36,7 +42,7 @@ function tdclick() {
         clicks = ['freecell', 'win', 'clicked'],
         cells = this.pTable.getElementsByTagName('td'),
         myhash = this.getAttribute('data-hash');
-    let myli = document.querySelectorAll("li[data-hash=\"" + myhash + "\"]")[0];
+    let myli = document.querySelectorAll('li[data-hash="' + myhash + '"]')[0];
 
     if (clicks.indexOf(this.className) > 0) {
         this.className = '';
@@ -59,7 +65,7 @@ function tdclick() {
     wins = [];
     for (let ol = 0; (g = gps[ol]); ol++) {
         let cnt = 0;
-        for (let i = 0, cell; i < 5 && (cell = cells[g[0] + (i * g[1])]); i++) {
+        for (let i = 0, cell; i < 5 && (cell = cells[g[0] + i * g[1]]); i++) {
             id = clicks.indexOf(cell.className);
             if (id >= 0) {
                 cnt++;
@@ -67,7 +73,7 @@ function tdclick() {
             }
         }
         if (cnt === 5) {
-            wins.push(g)
+            wins.push(g);
         }
     }
     if (wins.length) {
@@ -87,12 +93,14 @@ function tdclick() {
         new Audio('/files/bingo.mp3').play();
     }
     current_wins = wins.length;
-    document.getElementById("code").innerHTML = compressDecimal(gamedata['clicked2dec']);
+    document.getElementById('code').innerHTML = compressDecimal(
+        gamedata['clicked2dec']
+    );
 }
 
 function enable_clicks() {
     let tbls = document.getElementsByTagName('table');
-    for (let t = 0, tbl; tbl = tbls[t]; t++) {
+    for (let t = 0, tbl; (tbl = tbls[t]); t++) {
         if (tbl.className === 'card') {
             let tds = tbl.getElementsByTagName('td');
             for (let i = 0, td; (td = tds[i]); i++) {
@@ -111,9 +119,9 @@ function enable_clicks() {
 
 function loader(func) {
     if (document.addEventListener) {
-        window.addEventListener("load", func, false);
+        window.addEventListener('load', func, false);
     } else if (document.attachEvent) {
-        window.attachEvent("onload", func);
+        window.attachEvent('onload', func);
     } else {
         if (!window._onload_queue) {
             window._onload_queue = [];

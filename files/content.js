@@ -17,7 +17,7 @@ function binArrToDec(binaryArray) {
         return null;
     }
 
-    const binaryString = binaryArray.map((value) => value ? '1' : '0').join('');
+    const binaryString = binaryArray.map(value => (value ? '1' : '0')).join('');
     const decimalNumber = parseInt(binaryString, 2);
 
     return decimalNumber;
@@ -25,21 +25,28 @@ function binArrToDec(binaryArray) {
 
 function loadWords() {
     let minutes = d.getMinutes();
-    let bullshits = words.split("\n")
+    let bullshits = words
+        .split("\n")
         .filter(word => word.length > 0)
         .map(word => word.trim());
 
     let toomuch = bullshits.length - maxwords;
-    let smallarray = bullshits.slice((minutes % toomuch), (minutes % toomuch) + maxwords)
+    let smallarray = bullshits.slice(
+        minutes % toomuch,
+        (minutes % toomuch) + maxwords
+    );
 
     let randomizedWords = randomize(smallarray);
     let sortedWords = [...randomizedWords].sort();
-    let wordlist = document.getElementById("wordlist");
+    let wordlist = document.getElementById('wordlist');
 
     for (let i = 0; i < sortedWords.length; i++) {
-        let li = document.createElement("li");
+        let li = document.createElement('li');
         li.innerHTML = sortedWords[i];
-        li.setAttribute('data-hash', simpleHash(sortedWords[i].replace('&shy;', "")));
+        li.setAttribute(
+            'data-hash',
+            simpleHash(sortedWords[i].replace('&shy;', ''))
+        );
         li.setAttribute('onclick', 'liclick(this)');
         wordlist.appendChild(li);
     }
@@ -47,11 +54,25 @@ function loadWords() {
     let counter = 0;
     while (counter < cells) {
         currentword = randomizedWords.pop();
-        gamedata['words'][simpleHash(currentword.replace('&shy;', ""))] = {};
-        gamedata['words'][simpleHash(currentword.replace('&shy;', ""))]['word'] = currentword.replace('&shy;', "");
-        gamedata['words'][simpleHash(currentword.replace('&shy;', ""))]['clicked'] = false;
-        document.getElementById('cell' + counter).innerHTML = '<span class="word" data-hash="' + simpleHash(currentword.replace('&shy;', "")) + '">' + currentword + '</span>';
-        document.getElementById('cell' + counter).setAttribute('data-hash', simpleHash(currentword.replace('&shy;', "")));
+        gamedata['words'][simpleHash(currentword.replace('&shy;', ''))] = {};
+        gamedata['words'][simpleHash(currentword.replace('&shy;', ''))][
+            'word'
+        ] = currentword.replace('&shy;', '');
+        gamedata['words'][simpleHash(currentword.replace('&shy;', ''))][
+            'clicked'
+        ] = false;
+        document.getElementById('cell' + counter).innerHTML =
+            '<span class="word" data-hash="' +
+            simpleHash(currentword.replace('&shy;', '')) +
+            '">' +
+            currentword +
+            '</span>';
+        document
+            .getElementById('cell' + counter)
+            .setAttribute(
+                'data-hash',
+                simpleHash(currentword.replace('&shy;', ''))
+            );
         counter++;
     }
 }
@@ -77,7 +98,9 @@ function randomize(words) {
             tempWords = words.slice();
         }
     }
-    decWordlist = LZString.compressToEncodedURIComponent(JSON.stringify(decWordlist));
+    decWordlist = LZString.compressToEncodedURIComponent(
+        JSON.stringify(decWordlist)
+    );
     gamedata['wordlist'] = decWordlist;
 
     // decoWordlist = LZString.decompressFromEncodedURIComponent(decWordlist);

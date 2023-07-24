@@ -1,0 +1,21 @@
+---
+JavaScript:
+  beautifiers: ["Prettier"]
+  indent_size: 4
+  indent_style: "space"
+  max_preserve_newlines: 3
+  quotes: single
+  remove_trailing_whitespace: true
+
+CSS:
+  beautifiers: ["Prettier"]
+  max_preserve_newlines: 3
+  no_leading_zero: true
+  remove_trailing_whitespace: true
+
+HTML:
+  beautifiers: ["Prettier"]
+  indent_inner_html: true
+  max_preserve_newlines: 3
+  remove_trailing_whitespace: true
+
