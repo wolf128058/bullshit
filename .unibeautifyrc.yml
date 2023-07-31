@@ -9,6 +9,8 @@ JavaScript:
 
 CSS:
   beautifiers: ["Prettier"]
+  indent_size: 4
+  indent_style: "space"
   max_preserve_newlines: 3
   no_leading_zero: true
   remove_trailing_whitespace: true

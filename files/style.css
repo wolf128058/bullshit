@@ -191,7 +191,7 @@ li.clicked {
 
 #wordlist li[disabled="true"],
 #wordlist li[disabled="true"]:hover {
-	color: #404040;
+    color: #404040;
     cursor: not-allowed;
 }
 
