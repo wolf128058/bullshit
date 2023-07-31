@@ -1,6 +1,6 @@
 const cells = 24;
-const maxwords = Math.round(cells * 1.33);
 const d = new Date();
+const maxwordquota = 0.75;
 
 const simpleHash = str => {
     let hash = 0;
@@ -23,18 +23,29 @@ function binArrToDec(binaryArray) {
     return decimalNumber;
 }
 
+function arrayRotate(arr, times, reverse = false) {
+    for (let i = 0; i < times; i++) {
+        if (reverse) {
+            arr.unshift(arr.pop());
+        } else {
+            arr.push(arr.shift());
+        }
+    }
+    return arr;
+}
+
 function loadWords() {
-    let minutes = d.getMinutes();
+    let minutes = parseInt(d.getMinutes());
     let bullshits = words
-        .split("\n")
+        .split('\n')
         .filter(word => word.length > 0)
         .map(word => word.trim());
 
+    let maxwords = Math.max(Math.round(bullshits.length * maxwordquota), cells);
     let toomuch = bullshits.length - maxwords;
-    let smallarray = bullshits.slice(
-        minutes % toomuch,
-        (minutes % toomuch) + maxwords
-    );
+    let shift = minutes % toomuch;
+
+    let smallarray = arrayRotate(bullshits, shift, false).slice(0, maxwords);
 
     let randomizedWords = randomize(smallarray);
     let sortedWords = [...randomizedWords].sort();
