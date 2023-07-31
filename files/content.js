@@ -40,14 +40,19 @@ function loadWords() {
     let sortedWords = [...randomizedWords].sort();
     let wordlist = document.getElementById('wordlist');
 
-    for (let i = 0; i < sortedWords.length; i++) {
+    bullshits = bullshits.sort();
+    for (let i = 0; i < bullshits.length; i++) {
         let li = document.createElement('li');
-        li.innerHTML = sortedWords[i];
-        li.setAttribute(
-            'data-hash',
-            simpleHash(sortedWords[i].replace('&shy;', ''))
-        );
-        li.setAttribute('onclick', 'liclick(this)');
+        li.innerHTML = bullshits[i];
+        if (sortedWords.indexOf(bullshits[i]) != -1) {
+            li.setAttribute(
+                'data-hash',
+                simpleHash(bullshits[i].replace('&shy;', ''))
+            );
+            li.setAttribute('onclick', 'liclick(this)');
+        } else {
+            li.setAttribute('disabled', 'true');
+        }
         wordlist.appendChild(li);
     }
 

@@ -158,6 +158,9 @@ span.joker {
     text-align: center;
 }
 
+.wordlist h2 {
+    font-size: 1.5vw;
+}
 div.wordlist {
     background-color: #181818;
     border: 1px solid #fff;
@@ -168,7 +171,6 @@ div.wordlist {
 
 #wordlist li {
     border-bottom: 1px dotted #fff;
-    cursor: pointer;
     display: block;
     font-size: 1vw;
     list-style: none;
@@ -176,12 +178,21 @@ div.wordlist {
     width: 100%;
 }
 
+#wordlist li {
+    cursor: pointer;
+}
 #wordlist li:hover {
     color: #8d42fc;
 }
 
 li.clicked {
     color: #95fe30;
+}
+
+#wordlist li[disabled="true"],
+#wordlist li[disabled="true"]:hover {
+	color: #404040;
+    cursor: not-allowed;
 }
 
 .win span.joker,
