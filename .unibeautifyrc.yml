@@ -1,6 +1,7 @@
 ---
 JavaScript:
   beautifiers: ["Prettier"]
+  end_with_comma: false
   indent_size: 4
   indent_style: "space"
   max_preserve_newlines: 3
