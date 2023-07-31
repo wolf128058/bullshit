@@ -74,7 +74,7 @@ function colorizeSvg(checkcode) {
     }
 }
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     if (urlParams.get('check')) {
         colorizeSvg(urlParams.get('check'));
         document
