@@ -25,7 +25,7 @@ Radfahrer radelt auf Zebra&shy;streifen
 Radfahrer übersehen
 Rechts überholen
 Rettungs&shy;kräfte behindert
-Rettungs&shy;gasse missbraucht
+Rettungs&shy;gasse (keine/&shy;missbraucht)
 Riskanter Spurwechsel
 Riskantes Abbiegen
 Riskantes Überhol&shy;manöver
