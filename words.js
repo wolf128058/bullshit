@@ -7,7 +7,7 @@ Fahrer&shy;flucht
 Fahrzeug&shy;teile verloren
 Fußgänger auf Autobahn/ Schnellstraße
 Fußgänger laufen bei Rot
-Fußgänger&shy;überweg mißachtet
+Fußgänger&shy;überweg (Ampel)&shy;mißachtet
 Geister&shy;fahrer
 Gepiepte Schimpf&shy;wörter
 Geschwindigkeit überschritten
