@@ -7,7 +7,6 @@ Fahrer&shy;flucht
 Fahrzeug&shy;teile verloren
 Fußgänger auf Autobahn/ Schnellstraße
 Fußgänger laufen bei Rot
-Fußgänger&shy;überweg (Ampel)&shy;mißachtet
 Geister&shy;fahrer
 Gepiepte Schimpf&shy;wörter
 Geschwindigkeit überschritten
@@ -43,5 +42,5 @@ Trunken&shy;heitsfahrt
 Übertrieben langes Hupen
 Vorfahrt missachtet
 Wild&shy;wechsel
-Zebra&shy;streifen ignoriert
+Zebra&shy;streifen mißachtet
 `;
