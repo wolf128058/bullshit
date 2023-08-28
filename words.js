@@ -23,8 +23,8 @@ Radfahrer ohne Licht
 Radfahrer radelt auf Zebra&shy;streifen
 Radfahrer übersehen
 Rechts überholen
-Rettungs&shy;kräfte behindert
 Rettungs&shy;gasse (keine/&shy;missbraucht)
+Rettungs&shy;kräfte behindert
 Riskanter Spurwechsel
 Riskantes Abbiegen
 Riskantes Überhol&shy;manöver
@@ -35,8 +35,8 @@ Sekunden&shy;schlaf
 Sperrflächen&shy;könig
 Sprachbefehl "Ok Garmin" o.ä.
 Standstreifen&shy;mißbrauch
-Stop-&shy;Schild überfahren
 Stinke&shy;finger
+Stop-&shy;Schild überfahren
 Trunken&shy;heitsfahrt
 Überhol&shy;verbot missachtet
 Übertrieben langes Hupen
