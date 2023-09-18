@@ -34,12 +34,30 @@ function arrayRotate(arr, times, reverse = false) {
     return arr;
 }
 
+function shuffleArrayWithSeed(array, seed) {
+    // Initialisiere den Zufallszahlengenerator mit dem Seed
+    const rng = new Math.seedrandom(seed);
+
+    // Kopiere das Eingabe-Array, um es nicht zu verändern
+    const shuffledArray = [...array];
+
+    // Fisher-Yates-Shuffle-Algorithmus
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(rng() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+
+    return shuffledArray;
+}
+
 function loadWords() {
     let minutes = parseInt(d.getMinutes());
     let bullshits = words
         .split('\n')
         .filter(word => word.length > 0)
         .map(word => word.trim());
+
+    bullshits = shuffleArrayWithSeed(bullshits, minutes);
 
     let maxwords = Math.max(Math.round(bullshits.length * maxwordquota), cells);
     let toomuch = bullshits.length - maxwords;
