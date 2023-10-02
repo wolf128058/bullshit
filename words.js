@@ -29,12 +29,11 @@ Riskantes Überhol&shy;manöver
 Roadrage
 Rote Ampel überfahren
 Rücksichts&shy;loser Motorrad&shy;fahrer
-Sekunden&shy;schlaf
+Sekunden&shy;schlaf / Trunken&shy;heitsfahrt
 Sperrflächen&shy;könig
 Standstreifen&shy;mißbrauch
 Stinke&shy;finger
 Stop-&shy;Schild überfahren
-Trunken&shy;heitsfahrt
 Überhol&shy;verbot missachtet
 Übertrieben langes Hupen
 Vorfahrt missachtet
