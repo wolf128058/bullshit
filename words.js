@@ -4,7 +4,7 @@ Brake&shy;check
 Christian kommt vor
 Fahrer/ Beifahrer steigt aus
 Fahrer&shy;flucht
-Fahrzeug&shy;teile verloren
+Fahrzeug&shy;teile/Ladung verloren
 Fußgänger auf Autobahn/ Schnellstraße
 Fußgänger laufen bei Rot
 Geister&shy;fahrer
@@ -14,7 +14,6 @@ Hals&shy;brecherische Fußgänger
 Hals&shy;brecherische Radfahrer
 Handy am Steuer
 Kein Licht bei Dunkelheit/ Dämmerung
-Ladung verloren
 Lichthupe (Nötigung)
 Mittelspur&shy;schleicher
 Radfahrer mit zu wenig Abstand überholt
