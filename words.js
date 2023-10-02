@@ -20,6 +20,7 @@ Lichthupe (Nötigung)
 LKW-&shy;Spurwechsel ohne Blinken
 Mittelspur&shy;schleicher
 Parkplatz&shy;rowdy
+Radfahrer mit zu wenig Abstand überholt
 Radfahrer ohne Licht
 Radfahrer radelt auf Zebra&shy;streifen
 Radfahrer übersehen
