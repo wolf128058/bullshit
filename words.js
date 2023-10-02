@@ -17,10 +17,8 @@ Kein Licht bei Dunkelheit/ Dämmerung
 Ladung verloren
 Lichthupe (Nötigung)
 Mittelspur&shy;schleicher
-Parkplatz&shy;rowdy
 Radfahrer mit zu wenig Abstand überholt
 Radfahrer ohne Licht
-Radfahrer radelt auf Zebra&shy;streifen
 Radfahrer übersehen
 Rechts überholen
 Rettungs&shy;gasse (keine/&shy;missbraucht)
