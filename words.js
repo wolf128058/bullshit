@@ -1,6 +1,5 @@
 const words = `
 Abstands&shy;vergehen
-Blech&shy;schaden
 Brake&shy;check
 Christian kommt vor
 Fahrer/ Beifahrer steigt aus
@@ -17,7 +16,6 @@ Handy am Steuer
 Kein Licht bei Dunkelheit/ Dämmerung
 Ladung verloren
 Lichthupe (Nötigung)
-LKW-&shy;Spurwechsel ohne Blinken
 Mittelspur&shy;schleicher
 Parkplatz&shy;rowdy
 Radfahrer mit zu wenig Abstand überholt
@@ -35,7 +33,6 @@ Rote Ampel überfahren
 Rücksichts&shy;loser Motorrad&shy;fahrer
 Sekunden&shy;schlaf
 Sperrflächen&shy;könig
-Sprachbefehl "Ok Garmin" o.ä.
 Standstreifen&shy;mißbrauch
 Stinke&shy;finger
 Stop-&shy;Schild überfahren
