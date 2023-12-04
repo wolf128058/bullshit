@@ -13,6 +13,7 @@ Geschwindigkeit überschritten
 Hals&shy;brecherische Fußgänger
 Hals&shy;brecherische Radfahrer
 Handy am Steuer
+In Engstelle (Vorfahrt erzwungen)
 Kein Licht bei Dunkelheit/ Dämmerung
 Lichthupe (Nötigung)
 Mittelspur&shy;schleicher
@@ -20,8 +21,7 @@ Radfahrer mit zu wenig Abstand überholt
 Radfahrer ohne Licht
 Radfahrer übersehen
 Rechts überholen
-Rettungs&shy;gasse (keine/&shy;missbraucht)
-Rettungs&shy;kräfte behindert
+Rettungs&shy;gasse/-kräfte (&shy;missbraucht/&shy;behindert)
 Riskanter Spurwechsel
 Riskantes Abbiegen
 Riskantes Überhol&shy;manöver
