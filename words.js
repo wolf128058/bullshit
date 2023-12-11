@@ -16,7 +16,7 @@ Handy am Steuer
 In Engstelle (Vorfahrt erzwungen)
 Kein Licht bei Dunkelheit/ Dämmerung
 Lichthupe (Nötigung)
-Micha&shy; ist &shy;eingeschlafen
+Micha ist eingeschlafen
 Mittelspur&shy;schleicher
 Radfahrer mit zu wenig Abstand überholt
 Radfahrer ohne Licht
