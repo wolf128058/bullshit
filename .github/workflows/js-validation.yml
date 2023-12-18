@@ -16,7 +16,7 @@ jobs:
 
       - name: Validate JavaScript files
         run: |
-          js_files=$(find assets -name '*.js')
+          js_files=$(find -name '*.js')
           for file in $js_files; do
             if ! node -c "$file"; then
               echo "Invalid JavaScript syntax in file $file"
