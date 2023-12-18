@@ -1,0 +1,26 @@
+name: HTML Validation
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '**/*.html'
+      - '**/*.htm'
+
+jobs:
+  validate_html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Validate HTML files
+        run: |
+          html_files=$(find . -name '*.html' -or -name '*.htm')
+          for file in $html_files; do
+            if ! npx html-validate "$file"; then
+              echo "Invalid HTML in file $file"
+              exit 1
+            fi
+          done

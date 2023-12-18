@@ -1,0 +1,25 @@
+name: JavaScript Validation
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '**/*.js'
+
+jobs:
+  validate_js:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Validate JavaScript files
+        run: |
+          js_files=$(find assets -name '*.js')
+          for file in $js_files; do
+            if ! node -c "$file"; then
+              echo "Invalid JavaScript syntax in file $file"
+              exit 1
+            fi
+          done
