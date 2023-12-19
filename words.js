@@ -36,6 +36,7 @@ Stinke&shy;finger
 Stop-&shy;Schild überfahren
 Überhol&shy;verbot missachtet
 Übertrieben langes Hupen
+Unnötiges Hindernis
 Vorfahrt missachtet
 Wild&shy;wechsel
 Zebra&shy;streifen mißachtet
