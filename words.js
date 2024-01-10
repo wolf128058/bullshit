@@ -5,6 +5,7 @@ Christian kommt vor
 Fahrer/ Beifahrer steigt aus
 Fahrer&shy;flucht
 Fahrzeug&shy;teile/Ladung verloren
+Fehler bei Auf-/Abfahrt
 Fußgänger auf Autobahn/ Schnellstraße
 Fußgänger laufen bei Rot
 Geister&shy;fahrer
