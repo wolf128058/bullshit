@@ -30,7 +30,7 @@ Rote Ampel überfahren
 Rücksichts&shy;loser Motorrad&shy;fahrer
 Sekunden&shy;schlaf / Trunken&shy;heitsfahrt
 Sperrflächen&shy;könig
-Spurmißbrauch (Stand&shy;streifen/ Busspur)
+Spur&shy;miß&shy;brauch (Stand&shy;streifen/ Bus&shy;spur)
 Stinke&shy;finger
 Stop-&shy;Schild überfahren
 Überhol&shy;verbot missachtet
