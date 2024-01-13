@@ -2,6 +2,7 @@ const words = `
 Abstands&shy;vergehen
 Brake&shy;check
 Christian kommt vor
+Cosmo kommentiert
 Fahrer/ Beifahrer steigt aus
 Fahrer&shy;flucht
 Fahrzeug&shy;teile/Ladung verloren
