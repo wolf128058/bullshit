@@ -3,6 +3,7 @@ Abstands&shy;vergehen
 Brake&shy;check
 Christian kommt vor
 Cosmo kommentiert
+Egoist/ Voll&shy;idiot
 Fahrer/ Beifahrer steigt aus
 Fahrer&shy;flucht
 Fahrzeug&shy;teile/Ladung verloren
