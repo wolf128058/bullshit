@@ -155,7 +155,7 @@ function copy(f, t) {
   t.j = f.j;
   t.S = f.S.slice();
   return t;
-};
+}
 
 //
 // flatten()
