@@ -80,7 +80,7 @@ function tdclick() {
         document.getElementsByTagName('table')[0].classList.add('win');
         for (let ol = 0; (g = wins[ol]); ol++) {
             for (let i = 0; i < 5; i++) {
-                cells[g[0] + (i * g[1])].className = 'win';
+                cells[g[0] + i * g[1]].className = 'win';
             }
         }
     } else {
